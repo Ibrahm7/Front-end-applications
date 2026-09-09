@@ -1,0 +1,21 @@
+.vscode/
+
+Bootstrap/images/
+Bootstrap/Lessons/
+
+CSS/Lessons/
+CSS/images/
+CSS/Grid/
+CSS/Flexbox/
+CSS/Uygulamalar/OgreticiUyg/
+
+HTML/images/
+HTML/Lessons/
+HTML/Videos/
+
+JS/Async JS/
+JS/DOM/
+JS/OOP/
+JS/Modern JS/
+
+.clangd

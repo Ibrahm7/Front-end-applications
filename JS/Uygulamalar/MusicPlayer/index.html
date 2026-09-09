@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        width: 400px;
+      }
+
+      #progress .times,
+      .card-footer,
+      .volume-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .volume-container {
+        margin-right: 5px;
+      }
+      li.playing {
+        background-color: #0b5eb7;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card shadow lg rounded">
+        <img class="card-img-top" id="music-img" />
+        <audio src="" id="audio"></audio>
+        <div id="music-details" class="text-center border-bottom my-3">
+          <p class="title"></p>
+          <p class="singer"></p>
+        </div>
+        <div class="card-body">
+          <div id="progress">
+            <input type="range" name="" id="progress-bar" class="form-range" />
+            <div class="times">
+              <span class="badge bg-warning rounded-pill" id="current-time"
+                >0:00</span
+              >
+              <span class="badge bg-primary rounded-pill" id="duration"
+                >3:10</span
+              >
+            </div>
+          </div>
+          <div id="controls" class="text-center">
+            <button id="prev" class="btn btn-primary rounded-circle">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button
+              id="play"
+              class="btn btn-primary rounded-circle btn-lg mx-2"
+            >
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="next" class="btn btn-primary rounded-circle">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button
+            class="btn btn-primary btn-sm"
+            data-bs-toggle="collapse"
+            data-bs-target="#music-list"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="volume-container">
+            <i id="volume" class="fa-solid fa-volume-high"></i>
+            <input
+              class="form-range"
+              type="range"
+              name=""
+              id="volume-bar"
+              max="100"
+              value="100"
+            />
+          </div>
+        </div>
+        <div id="music-list" class="collapse">
+          <ul class="list-group list-group-flush"></ul>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="music.js"></script>
+  </body>
+</html>

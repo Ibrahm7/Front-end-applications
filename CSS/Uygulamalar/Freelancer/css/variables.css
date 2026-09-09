@@ -1,0 +1,101 @@
+:root {
+  --max-width: 1200px;
+  --primary-color: #ef6d6d;
+  --light-color: #f4f4f4;
+  --medium-color: #ccc;
+  --dark-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--max-width);
+  padding: 0 1.4rem;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn-primary {
+  color: #333;
+  background-color: var(--primary-color);
+}
+.btn-light {
+  color: #333;
+  background-color: var(--light-color);
+}
+.btn-dark {
+  color: #fff;
+  background-color: var(--dark-color);
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: var(--primary-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-light {
+  background-color: var(--light-color);
+}
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.text-center {
+  text-align: center;
+}
+.section-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.border-bottom {
+  height: 3px;
+  width: 3rem;
+  background-color: var(--primary-color);
+  margin: 0 auto 1rem auto;
+}
+
+.lead {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  word-spacing: 2px;
+}

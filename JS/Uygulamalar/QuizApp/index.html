@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+      integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div id="button-box" class="active">
+        <button class="btn btn-lg btn-warning btn-start">Start Quiz</button>
+      </div>
+      <div id="quiz-box" class="card">
+        <div id="header" class="card-header">
+          <h4 class="app-title mb-0">Quiz App</h4>
+          <div class="time">
+            <div class="time-text">Kalan Süre:</div>
+            <div class="time-second">10</div>
+          </div>
+          <div class="timeline"></div>
+        </div>
+        <div id="body"></div>
+        <div id="footer" class="card-footer summary">
+          <div class="question-index"></div>
+          <button class="btn btn-secondary btn-next btn-sm">
+            <i class="bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div id="score-box" class="card card-body">
+        <i class="bi bi-trophy"></i>
+        <div class="score-text"></div>
+        <div>
+          <button class="btn btn-primary btn-replay">Replay</button>
+          <button class="btn btn-primary btn-quit">Quit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

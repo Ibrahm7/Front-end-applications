@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.book-list li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: antiquewhite;
+}
+
+.book-list .book-name {
+  flex: 1;
+  padding: 5px 10px;
+}
+
+.book-list li input[type="text"] {
+  flex: 1;
+  padding: 5px 10px;
+}
+
+.book-list li[item-completed] .book-name {
+  text-decoration: line-through;
+  color: red;
+}
+
+.book-list .bi {
+  cursor: pointer;
+}
+
+.book-list li .bi {
+  color: brown;
+  padding: 0 5px;
+  transform: scale(0);
+  transition: transform 200ms;
+}
+
+.book-list li:hover .bi {
+  transform: scale(1);
+}
