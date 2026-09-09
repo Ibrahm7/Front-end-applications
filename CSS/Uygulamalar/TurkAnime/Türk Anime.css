@@ -1,0 +1,794 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    background: rgb(35, 37, 44);
+}
+.navbar {
+    width: 100%;
+    background: #1A1C22 !important;
+    box-shadow: 0px 0px 5px rgb(34,34,34);
+    padding: 10px 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#navbar-left{
+    display:flex;
+    align-items:center;
+    
+    
+}
+.home-icon {
+    display: flex;
+    align-items: center;
+    color: #bbb;
+    width: 30px;
+    height: 30px;
+    margin-right: 18px;
+}
+.home-icon:hover{
+    opacity:0.6;
+    cursor:pointer;
+}
+
+#navbar-left ul{
+    list-style:none;
+    display:flex;
+}
+#navbar-left ul li{
+    margin-right:15px;
+}
+#navbar-left ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    padding:10px;
+    transition:0.3s;
+}
+#navbar-left ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.badge{
+    background:red;
+    color:white;
+    font-size:10px;
+    padding:2px 5px;
+    border-radius:3px;
+    margin-left:5px;
+}
+
+#navbar-right{
+    display:flex;
+    align-items:center;
+}
+.search{
+    padding:10px;
+    background:#222;
+    border:none;
+    outline:none;
+    color:white;
+    padding-left:10px;
+    width:160px;
+}
+.dark-mode-icon {
+    width: 25px; /* Genişliği ayarla */
+    height: 25px; /* Yüksekliği ayarla */
+    cursor: pointer; /* Üzerine gelince el simgesi çıksın */
+    color:yellow;
+    margin-left:10px;
+    margin-top:3px;
+    
+}
+
+.login, .register{
+    color:white;
+    text-decoration:none;
+    padding: 10px;
+    margin-left:15px;
+}
+.login:hover, .register:hover {
+    background: rgba(255, 255, 255, 0.1);
+        
+}
+
+.Container{
+    width:100%;
+    min-width:1000px;
+    max-width:1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height:1000px;
+
+}
+
+.foto img{
+    width:250px;
+    
+
+}
+.inverse-panel {
+    background: #15171C;
+    padding: 0 15px;
+    width: 100%;
+    border-radius:4px;
+    height:45px;
+    display:flex;
+    align-items:center;
+}
+.panel {
+    border: 0.65px solid rgb(35, 37, 44);
+    margin-top: 20px;
+    margin: 0 auto;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.inner-panel{
+    padding:5px 0;
+    margin:0 auto;
+    text-align:center;
+}
+.harfler, .x {
+    padding-right: 10px;
+    padding-left: 6px;
+    border-right: 1px solid rgb(35, 37, 44);
+    display: flex;
+    margin-left: 3px;
+    color: white;
+    text-decoration: none;
+}
+.harfler,.y{
+    padding-left:10px;
+    color:white;
+    padding-right:7px;
+}
+.arka {
+    width: 100%;
+    background-color: #1B1F23;
+}
+
+.pompa {
+    background: #1B1F23;
+    height: 120px;
+    
+}
+.animeler a{
+    text-decoration:none;
+}
+.animeler a img {
+    border-radius:50%;
+    object-fit: cover;
+    margin-left:17px;
+    margin-top:10px;
+}
+.pompa2 {
+    background: #1B1F23;
+    height: 300px;
+    display: flex;
+}
+.sikiş {
+    background: #15171C;
+    height: 32px;
+    width: 320px;
+    border-bottom: 0.6px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 7px;
+}
+.reklam h4 {
+        color: white;
+        font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+        font-size:14px;
+        display:flex;
+        align-items:center;
+
+}
+.pompa2 a{
+    text-decoration:none;
+}
+
+
+.sponsor {
+    background: #23252C;
+    height: 250px;
+    width: 320px;
+    padding: 8px;
+    margin-left:7px;
+    border: 0.65px;
+    
+}
+.boş {
+    background: #1E2026;
+    height: 20px;
+    width: 320px;
+    margin-left:7px;
+    border-radius:4px;
+}
+.manga {
+    background: #15171C;
+    width: 320px;
+    height: 32px;
+    margin-left: 15px;
+    border-radius:4px;
+    
+}
+.manga h4 {
+        font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        padding:7px;
+        color:white;
+        text-decoration:none;
+        margin-left:3px;
+}
+.orta-panel {
+    background: #23252C;
+    height: 270px;
+    width: 320px;
+    overflow:auto;
+    
+}
+.div{
+    display:flex;
+    
+}
+.foto1 {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 0.5px solid #1E2026;
+    border-radius: 5px;
+}
+.yazı1{
+   color:floralwhite;
+   text-decoration:none;
+   margin-left:4px;
+}
+.div2{
+    display:flex;
+}
+.foto2 {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 0.5px solid #1E2026;
+    border-radius:5px;
+}
+.yazı2 {
+    color: floralwhite;
+    text-decoration: none;
+    margin-left: 4px;
+}
+.div3{
+    display:flex;
+}
+.foto3 {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 0.5px solid #1E2026;
+    border-radius: 5px;
+    
+}
+
+.yazı3 {
+    color: floralwhite;
+    text-decoration: none;
+    margin-left: 4px;
+    
+}
+.pompa10 {
+    background: #15171C;
+    width: 320px;
+    height: 32px;
+    margin-left: 7px;
+    border-radius: 4px;
+}
+.pompa10 #fan-pano {
+        font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        padding: 7px;
+        color: white;
+        text-decoration: none;
+        margin-left:7px;
+}
+.alt-div {
+    background: #23252C;
+    height: 270px;
+    width: 318px;
+    padding: 8px;
+    margin-left: 1.5px;
+    border: 0.65px;
+}
+.alt-div #alt-fan-pano {
+        font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        color: #c5c8ce;
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 20px;
+}
+.alt-div #link1{
+    text-decoration:none;
+}
+.HolySubs{
+    height:120px;
+    padding:10px;
+    margin-bottom:10px;
+
+}
+.HolySubs #paragraf {
+    font-size: 12px;
+    color: #c5c8ce;
+    margin-top: 10px;
+    font-family: "Arial", Tahoma, Verdana, Helvetica, sans-serif;
+}
+.HolySubs #tarih {
+        color: #777;
+        float: right !important;
+        font-size: 14px;
+        margin-top: 10px;
+}
+.HolySubs:hover {
+    background: #15171C;
+    border-radius:2px;
+ 
+}
+
+.alt {
+    background: rgb(35, 37, 44);
+    width: 660px;
+    height: 1121px;
+}
+.panel-üst {
+    background: #15171C;
+    height: 50px;
+    width: 670px;
+    border-radius:2px;
+    margin-top:7px;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+}
+
+.bölüm {
+    background: #15171C;
+    height: 31px;
+    width: 164px;
+    margin-left: 20px;
+    padding-top:10px;
+
+}
+.bölüm-paragraf {
+    font-size: 11px;
+    color:#C5C8CE;
+    margin-top:6.5px;
+    padding:11px 2.5px;
+    font-family:"Arial", Tahoma, Verdana, Helvetica, sans-serif;
+}
+.bölüm2 {
+    background: #23252C;
+    height: 32px;
+    width: 230px;
+    padding-top: 10px;
+    margin-top: 19px;
+    border-right: 1px solid #15171C;
+}
+.bölüm2-paragraf {
+    font-size: 11px;
+    color: #C5C8CE;
+    padding-left:20px;
+    font-family: "Arial", Tahoma, Verdana, Helvetica, sans-serif;
+}
+
+.bölüm3 {
+    background: #23252C;
+    height: 35px;
+    width: 230px;
+    padding-top: 10px;
+    margin-top: 19px;
+    border-right: 1px solid #15171C;
+}
+.bölüm4 {
+    background: #23252C;
+    height: 35px;
+    width: 230px;
+    padding-top: 10px;
+    margin-top: 19px;
+    border-right: 1px solid #15171C;
+}
+.bölüm3-paragraf {
+    font-size: 11px;
+    color: #C5C8CE;
+    padding-left: 20px;
+    font-family: "Arial", Tahoma, Verdana, Helvetica, sans-serif;
+}
+.bölüm4-paragraf {
+    font-size: 11px;
+    color: #C5C8CE;
+    padding-left: 20px;
+    font-family: "Arial", Tahoma, Verdana, Helvetica, sans-serif;
+}
+.bölüm-paragraf:hover{
+    color:white;
+    cursor:pointer;
+}
+.bölüm2:hover {
+    background: #15171C;
+    cursor:pointer;
+}
+.bölüm3:hover {
+    background: #15171C;
+    cursor:pointer;
+}
+.bölüm4:hover {
+    background: #15171C;
+    cursor:pointer;
+}
+
+.büyük-panel{
+    display:flex;
+    flex-direction:row;
+    height:600px;
+    position:relative;
+}
+.yan-panel {
+    background: #15171C;
+    height: 50px;
+    width: 306px;
+    border-radius: 2px;
+    margin-top: 7px;
+    margin-left:25px;
+    display:flex;
+}
+.yan1 {
+    background: #15171C;
+    height: 31px;
+    width: 108px;
+    margin-left: 20px;
+    padding: 10px;
+    
+}
+.yan1-paragraf {
+    font-size: 11px;
+    color: #C5C8CE;
+    margin-top: 6.5px;
+    padding: 11px 2.5px;
+    font-family: "Arial", Tahoma, Verdana, Helvetica, sans-serif;
+}
+.yan2 {
+    background: #23252C;
+    height: 31px;
+    width: 108px;
+    border-right: 1px solid #15171C;
+    margin-top:20px;
+    
+}
+.yan3 {
+    background: #23252C;
+    height: 31px;
+    width: 108px;
+    margin-top: 20px;
+    border-right: 1px solid #15171C;
+}
+.yan2-paragraf {
+    font-size: 11px;
+    color: #C5C8CE;
+    margin-top:10px;
+    padding-left:20px;
+    font-family: "Arial", Tahoma, Verdana, Helvetica, sans-serif;
+}
+.yan3-paragraf {
+    font-size: 11px;
+    color: #C5C8CE;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-family: "Arial", Tahoma, Verdana, Helvetica, sans-serif;
+}
+
+.yan1-paragraf:hover {
+    color: white;
+    cursor:pointer;
+}
+
+.yan2:hover {
+    background: #15171C;
+    cursor:pointer;
+}
+
+.yan3:hover {
+    background: #15171C;
+    cursor:pointer;
+}
+
+.filtreleme {
+    background: #1B1F23;
+    height: 560px;
+    width: 306px !important;
+    margin-top: 99px;
+    display: block;
+    position: absolute;
+    right: 352.5px;
+    top: 640px;
+}
+.filtre-buton {
+    background: #15171C;
+    border: none;
+    outline: none;
+    color: #15171C;
+    font-size: 14px;
+}
+.buton {
+    background: #1E2026;
+    font-size: 13px;
+    width: 306px;
+    height: 30px;
+    color: rgb(197, 200, 206);
+    border-radius: 3px;
+    outline:none;
+    padding-left:4px;
+    border:none;
+}
+
+.kategori-list {
+    background: rgb(35, 37, 44);
+    height: 505px;
+    width: 306px;
+    overflow: auto;
+    border-left: 1px solid #15171C;
+}
+    .kategori-list ul li {
+        height: 31px;
+        list-style: none;
+        border-bottom: 1px solid #15171C;
+        padding: 7px;
+        margin-left: 11px;
+        font-size: 13px;
+        margin-top: 7px;
+    }
+
+    .kategori-list ul a {
+        text-decoration: none;
+        font-size: 11px;
+        color: #C5C8CE;
+        font-family: "Arial", Tahoma, Verdana, Helvetica, sans-serif;
+    }
+
+.kategori-alt {
+    background: #1B1F23;
+    height: 26px;
+    width: 307px;
+    border-top: 1px solid #1B1F23;
+    margin-top: 2px;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+.kategori-list ul li:hover {
+    background: #15171C;
+    color:white;
+}
+.resimler {
+    background: #1B1F23;
+    height: 1200px;
+    width: 325px;
+    position: absolute;
+    right: 670px;
+    margin-top: 70px;
+}
+.resimler2 {
+    background: #1B1F23;
+    height: 1200px;
+    width: 347px;
+    position: absolute;
+    right: 324px;
+    margin-top: 70px;
+    padding-left:7px;
+    
+}
+
+.anime1 {
+    background: rgb(35, 37, 44);
+    height: 200px;
+    width: 324px;
+    margin: 5px;
+
+}
+.anime1-üst {
+    background: #15171C;
+    height: 32px;
+    width: 324px;
+    color: #C5C8CE;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Arial", Tahoma, Verdana, Helvetica, sans-serif;
+    font-size:12px;
+
+}
+.anime1-üst img {
+        margin-top: 15px;
+        border: 5px solid #15171C;
+        border-radius: 5px;
+        float: left;
+        margin-right:8px;
+}
+.anime1-p{
+    margin-top:16px;
+    
+}
+.anime1-p2{
+    margin-top:20px;
+}
+.anime1-p3 {
+    margin-top: 18px;
+    font-weight:bold;
+}
+.anime1-p4 {
+    margin-top:10px;
+    
+}
+.anime1-üst a {
+    text-decoration: none;
+    color:#C5C8CE;
+}
+.like {
+    background: #15171C;
+    margin-top:7px;
+    width:140px;
+    height:30px;
+    margin-left:165px;
+    border-radius:3px;
+    
+}
+.like ul{
+    display:flex;
+    flex-direction:row;
+    
+    
+    
+}
+.like ul li {
+        margin: 7px;
+        list-style: none;
+        border-right: 1px solid #15171C;
+        margin-left: 13px;
+}
+.like ul li:hover{
+     opacity:0.6;
+     cursor:pointer;
+ }
+.bbb:hover{
+    color:white;
+}
+.anime1-üst img:hover{
+    cursor:pointer;
+}
+#haber2 {
+    
+    position: relative;
+    right: 8px;
+    margin-top: 10px;
+    width: 307px !important; 
+}
+#SİKİŞ{
+    width:307px;
+}
+#BOŞ {
+    background: #17191F;
+    width:307px;
+    border-radius:2px;
+}
+#SPONSOR {
+    background: #1E2026;
+    width:307px;
+}
+
+.social_media{
+    background-color: #1B1F23;
+    width: 306px;
+    height: 350px;
+    margin-top:4px;
+}
+.media{
+    width: 306px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4px;
+}
+.a{
+    width: 295px;
+    height: 50px;
+    text-decoration:none;
+    color:#E9EAEA;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 13px ;
+    font-family:"Arial", Tahoma, Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#dc{
+    background-color: #6A80C9;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-right: 51px;
+}
+#tel{
+    background-color: #35A1D0;
+    border-radius: 5px;
+    padding-top: 13px;
+    padding-right: 23px;
+}
+#insta{
+    background-image:linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    border-radius: 5px;
+    padding-top: 13px;
+    padding-right: 62px;
+}
+#tiktok{
+    background-color: #FF004F;
+    border-radius: 5px;
+    padding-top: 13.5px;
+    padding-right: 80px;
+}
+.a:hover{
+    opacity: 0.9;
+}
+
+
+.footer{
+    width: 1690px;
+    height: 96px;
+    background-color: #22242B;
+    position: relative;
+    top: 800px;
+}
+#copy{
+    position: absolute;
+    left: 346px;
+    top:15px;
+    color:#C5C8CE;
+    font-size: 12px;
+}
+
+.scroll-to-top{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+}
+.scroll-to-top:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar {
+    width: 10px;  /* Scrollbar genişliği */
+}
+::-webkit-scrollbar-track {
+    background: #1a1a1a;  /* Koyu arkaplan */
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;  /* Gri renk */
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* Daha koyu gri */
+}
